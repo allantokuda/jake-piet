@@ -17,6 +17,31 @@ I used ImageMagick's `convert` tool to create the PNG file:
 
         convert jake.ppm jake.png
 
+# How the heck do you even write this?
+
+The language, being esoteric, is deliberately difficult to work with.
+
+First and biggest gotcha is that a color is not a command - a color CHANGE is a command.
+That makes the code hard to read because it always depends on what came before it.
+
+At first I tried doing it with only 1px border all the way around and it just did not all fit, so I enlarged to 2px around.
+Constructing large numbers out of smaller ones with some math made it more fun and provided more of a colorful stripe border.
+
+I learned at the END of this program the power of whitespace to make the program more readable:
+After whitespace, the next block has NO effect, no that allows you to reset to any color you want.
+The last two turns look identical and that allows you to much more easily understand them as the same command twice.
+
+A gotcha is that when turning at each corner, the codel chooser (CC) also switches left to right.
+For this style of program wrapping around clockwise, you want the CC to stay on the left,
+so you don't accidentally allow taller blocks to cause the interpreter to stray off the border
+into whitespace or other decorative space. So a SWITCH command at each corner helps counteract that problem.
+
+Another challenge is ending the program.
+You really have to understand color blocks to be able to end a program and not have it enter an infinite loop.
+You have to trap the program in a block that has only black at all of its extreme ends.
+The J here proved to be just enough for the task. :)
+Explicit pointer turns allowed the program to require no black except in the inner letters.
+
 # Overview
 
 (See `trace` for full details)
