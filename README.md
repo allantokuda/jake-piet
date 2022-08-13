@@ -1,10 +1,12 @@
-This image is a [Piet](https://www.dangermouse.net/esoteric/piet.html) program that contains a secret message:
+This image ![Hi, Jake!](jake.png) is a [Piet](https://www.dangermouse.net/esoteric/piet.html) program that contains a secret message.
 
-![Hi, Jake!](jake.png)
+Large version:
+
+![Hi, Jake!](jake540.png)
 
 # Running the program
 
-To run: install `npiet` and run `npiet jake.ppm`.
+To run: install `npiet` and run `npiet jake.png`. The large version also works.
 
 # npiet Installation
 
@@ -21,7 +23,7 @@ I used ImageMagick's `convert` tool to create the PNG file:
 
 Message:
 
-      Hi, Jake!
+      Hi Jake!
       ASCII: [72, 105, 32, 74, 97, 107, 101, 33]
 
 H: 72 = 64 + 8 = (8 * 8) + 8
