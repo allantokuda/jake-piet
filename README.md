@@ -1,4 +1,19 @@
+This image is a [Piet](https://www.dangermouse.net/esoteric/piet.html) program that contains a secret message:
+
+![Hi, Jake!](jake.png)
+
+# Running the program
+
 To run: install `npiet` and run `npiet jake.ppm`.
+
+# npiet Installation
+
+I compiled npiet on Ubuntu Linux and used `npietedit` to write the program.
+https://github.com/gleitz/npiet
+
+I used ImageMagick's `convert` tool to create the PNG file:
+
+        convert jake.ppm jake.png
 
 # Overview
 
