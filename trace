@@ -1,0 +1,219 @@
+
+trace: step 0  (0,0/r,l lR -> 2,0/r,l nR):
+action: push, value 8
+trace: stack (1 values): 8
+
+trace: step 1  (2,0/r,l nR -> 3,0/r,l nB):
+action: duplicate
+trace: stack (2 values): 8 8
+
+trace: step 2  (3,0/r,l nB -> 4,0/r,l nG):
+action: duplicate
+trace: stack (3 values): 8 8 8
+
+trace: step 3  (4,0/r,l nG -> 5,0/r,l nR):
+action: duplicate
+trace: stack (4 values): 8 8 8 8
+
+trace: step 4  (5,0/r,l nR -> 6,0/r,l lY):
+action: multiply
+trace: stack (3 values): 64 8 8
+
+trace: step 5  (6,0/r,l lY -> 7,0/r,l lG):
+action: add
+trace: stack (2 values): 72 8
+
+trace: step 6  (7,0/r,l lG -> 8,0/r,l dY):
+action: out(char)
+H
+trace: stack (1 values): 8
+
+trace: step 7  (8,0/r,l dY -> 9,0/r,l dM):
+action: duplicate
+trace: stack (2 values): 8 8
+
+trace: step 8  (9,0/r,l dM -> 10,0/r,l dC):
+action: duplicate
+trace: stack (3 values): 8 8 8
+
+trace: step 9  (10,0/r,l dC -> 11,0/r,l lC):
+action: push, value 5
+trace: stack (4 values): 5 8 8 8
+
+trace: step 10  (11,0/r,l lC -> 12,0/r,l lB):
+action: add
+trace: stack (3 values): 13 8 8
+
+trace: step 11  (12,0/r,l lB -> 13,0/r,l dM):
+action: multiply
+trace: stack (2 values): 104 8
+
+trace: step 12  (13,0/r,l dM -> 14,0/r,l lM):
+action: push, value 1
+trace: stack (3 values): 1 104 8
+
+trace: step 13  (14,0/r,l lM -> 15,0/r,l lR):
+action: add
+trace: stack (2 values): 105 8
+
+trace: step 14  (15,0/r,l lR -> 16,0/r,l dM):
+action: out(char)
+i
+trace: stack (1 values): 8
+
+trace: step 15  (16,0/r,l dM -> 17,0/r,l lM):
+action: push, value 4
+trace: stack (2 values): 4 8
+
+trace: step 16  (17,0/r,l lM -> 18,0/r,l dR):
+action: multiply
+trace: stack (1 values): 32
+
+trace: step 17  (18,0/r,l dR -> 19,0/r,l dB):
+action: duplicate
+trace: stack (2 values): 32 32
+
+trace: step 18  (19,0/r,l dB -> 20,0/r,l nC):
+action: out(char)
+ 
+trace: stack (1 values): 32
+
+trace: step 19  (20,0/r,l nC -> 21,0/r,l nY):
+action: duplicate
+trace: stack (2 values): 32 32
+
+trace: step 20  (21,0/r,l nY -> 22,0/r,l dY):
+action: push, value 10
+trace: stack (3 values): 10 32 32
+
+trace: step 21  (22,0/r,l dY -> 23,0/r,l dG):
+action: add
+trace: stack (2 values): 42 32
+
+trace: step 22  (23,0/r,l dG -> 24,0/r,l dC):
+action: add
+trace: stack (1 values): 74
+
+trace: step 23  (24,0/r,l dC -> 25,0/r,l dY):
+action: duplicate
+trace: stack (2 values): 74 74
+
+trace: step 24  (25,0/r,l dY -> 26,0/r,l nR):
+action: out(char)
+J
+trace: stack (1 values): 74
+
+trace: step 25  (26,0/r,l nR -> 26,1/d,r dR):
+action: push, value 1
+trace: stack (2 values): 1 74
+
+trace: step 26  (26,1/d,r dR -> 26,2/d,r nC):
+action: switch
+trace: stack (1 values): 74
+trace: stack (1 values): 74
+
+trace: step 27  (26,2/d,l nC -> 26,3/d,l nY):
+action: duplicate
+trace: stack (2 values): 74 74
+
+trace: step 28  (26,3/d,l nY -> 26,4/d,l dY):
+action: push, value 3
+trace: stack (3 values): 3 74 74
+
+trace: step 29  (26,4/d,l dY -> 26,5/d,l dC):
+action: divide
+trace: stack (2 values): 24 74
+
+trace: step 30  (26,5/d,l dC -> 26,6/d,l lC):
+action: push, value 1
+trace: stack (3 values): 1 24 74
+
+trace: step 31  (26,6/d,l lC -> 26,7/d,l nB):
+action: sub
+trace: stack (2 values): 23 74
+
+trace: step 32  (26,7/d,l nB -> 26,8/d,l nM):
+action: add
+trace: stack (1 values): 97
+
+trace: step 33  (26,8/d,l nM -> 26,9/d,l nC):
+action: duplicate
+trace: stack (2 values): 97 97
+
+trace: step 34  (26,9/d,l nC -> 26,10/d,l lG):
+action: out(char)
+a
+trace: stack (1 values): 97
+
+trace: step 35  (26,10/d,l lG -> 25,10/l,r nG):
+action: push, value 1
+trace: stack (2 values): 1 97
+
+trace: step 36  (25,10/l,r nG -> 24,10/l,r lM):
+action: switch
+trace: stack (1 values): 97
+trace: stack (1 values): 97
+
+trace: step 37  (24,10/l,l lM -> 23,10/l,l nM):
+action: push, value 10
+trace: stack (2 values): 10 97
+
+trace: step 38  (23,10/l,l nM -> 22,10/l,l nR):
+action: add
+trace: stack (1 values): 107
+
+trace: step 39  (22,10/l,l nR -> 21,10/l,l nB):
+action: duplicate
+trace: stack (2 values): 107 107
+
+trace: step 40  (21,10/l,l nB -> 20,10/l,l lC):
+action: out(char)
+k
+trace: stack (1 values): 107
+
+trace: step 41  (20,10/l,l lC -> 19,10/l,l nC):
+action: push, value 6
+trace: stack (2 values): 6 107
+
+trace: step 42  (19,10/l,l nC -> 18,10/l,l dB):
+action: sub
+trace: stack (1 values): 101
+
+trace: step 43  (18,10/l,l dB -> 17,10/l,l nC):
+action: out(char)
+e
+trace: stack is empty
+
+trace: step 44  (17,10/l,l nC -> 11,10/l,l dC):
+action: push, value 33
+trace: stack (1 values): 33
+
+trace: step 45  (11,10/l,l dC -> 10,10/l,l nG):
+action: out(char)
+!
+trace: stack is empty
+trace: white cell(s) crossed - continuing with no command at 2,10...
+
+trace: step 46  (10,10/l,l nG -> 2,10/l,l lR):
+
+trace: step 47  (2,10/l,l lR -> 1,10/l,l nR):
+action: push, value 1
+trace: stack (1 values): 1
+
+trace: step 48  (1,10/l,l nR -> 0,10/l,l dC):
+action: pointer
+trace: stack is empty
+trace: white cell(s) crossed - continuing with no command at 0,7...
+
+trace: step 49  (0,10/u,l dC -> 0,7/u,l lR):
+
+trace: step 50  (0,7/u,l lR -> 0,6/u,l nR):
+action: push, value 1
+trace: stack (1 values): 1
+
+trace: step 51  (0,6/u,l nR -> 0,5/u,l dC):
+action: pointer
+trace: stack is empty
+trace: white cell(s) crossed - continuing with no command at 6,5...
+
+trace: step 52  (0,5/r,l dC -> 6,5/r,l nR):
